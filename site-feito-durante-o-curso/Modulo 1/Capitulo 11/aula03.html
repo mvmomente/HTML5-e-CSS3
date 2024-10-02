@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <!--"<audio src="midia/happy-mistake.mp3" controls autoplay></audio>" só funciona formatos Open-Source, MP3, WAV e OGG. Alguns navegadores não tem compatibilidade com esse método-->
+
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!--Tentar evitar arquivos Wav, pois, são arquivos muito pesados. Arquivos com qualidades boas são para Download e não Navegação!-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique Aqui para Baixar o Arquivo</a></p>
+    </audio>
+
+    <br>
+    <a href="index.html" rel="prev" type="_self">Voltar</a>
+</body>
+</html>
